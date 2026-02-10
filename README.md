@@ -1,7 +1,7 @@
 <h1 align="center">IoT Communication Protocols Engineering</h1>
 
 <p align="center">
-MQTT • CoAP • HTTP • AMQP • DDS • SOAP • XMPP • LoRaWAN • Embedded Communication Protocols
+MQTT • CoAP • HTTP • AMQP • DDS • SOAP • XMPP • LoRaWAN • Industrial & Embedded Communication
 </p>
 
 <p align="center">
@@ -10,110 +10,103 @@ Graduate Apprentice (2025) • Embedded Systems & IoT Engineering<br>
 Central Manufacturing Technology Institute (CMTI), Bangalore
 </p>
 
-<p align="center">
-
-<img src="https://img.shields.io/badge/MQTT-Protocol-blue?style=for-the-badge">
-<img src="https://img.shields.io/badge/CoAP-Protocol-green?style=for-the-badge">
-<img src="https://img.shields.io/badge/HTTP-Communication-yellow?style=for-the-badge">
-<img src="https://img.shields.io/badge/LoRaWAN-Low%20Power-red?style=for-the-badge">
-<img src="https://img.shields.io/badge/Embedded-Systems-success?style=for-the-badge">
-
-</p>
-
 ---
 
-## Portfolio Notice
+## Communication Protocol Architecture
 
-This repository is created strictly for **portfolio and recruiter evaluation**.  
-It provides engineering-level documentation and analysis of IoT communication protocols used in embedded and connected systems.
+<p align="center">
+<img src="FLOW_PROTOCOLS.jpg" width="85%">
+</p>
 
-This repository contains **technical documentation only**, not production firmware.
+This diagram illustrates how communication protocols are categorized into:
+
+- IoT Protocols
+- General Embedded Protocols
+- Industrial Fieldbus Protocols
+- Industrial Ethernet Protocols
 
 ---
 
 ## Project Overview
 
-This project presents an **engineering-level study and comparison of IoT communication protocols** used in embedded, industrial, and connected systems. The goal is to understand protocol selection based on power, bandwidth, latency, reliability, scalability, and system architecture requirements.
+The **IoT Protocols Documentation project** focuses on creating a comprehensive and structured reference for communication protocols widely used in Internet of Things (IoT) systems. As connected devices become increasingly prevalent across industries—from smart homes and healthcare to agriculture and manufacturing—the need for seamless communication between heterogeneous devices has become critical.
 
-The knowledge presented here is based on practical exposure to IoT and embedded system development during my tenure at **Central Manufacturing Technology Institute (CMTI)**.
+This project details key IoT protocols such as MQTT, CoAP, HTTP, and LoRaWAN, each tailored for different performance metrics including power efficiency, data rate, range, reliability, and scalability.
+
+The documentation explains architectural structure, data exchange models, and protocol-specific mechanisms. It provides comparative insights into strengths and weaknesses of protocols to help engineers select the most suitable communication method for applications ranging from low-power sensor networks to real-time industrial control systems.
 
 ---
 
-## Application Layer Protocols
+## Internet of Things (IoT)
 
-- **HTTP** – Web-based communication and REST APIs  
-- **CoAP** – Lightweight REST protocol for constrained devices  
-- **MQTT** – Publish–subscribe protocol for IoT monitoring  
-- **AMQP** – Reliable enterprise-grade messaging protocol  
-- **DDS** – Real-time, high-performance distributed communication  
-- **SOAP** – XML-based structured messaging protocol  
-- **XMPP** – Real-time messaging and device communication  
-- **LoRaWAN** – Long-range, low-power wireless IoT communication  
+The Internet of Things (IoT) is a network of physical devices embedded with sensors, software, and network connectivity. These systems enable seamless communication between people, processes, and machines using cloud computing, data analytics, and real-time monitoring.
+
+---
+
+## OSI Model
+
+The **Open Systems Interconnection (OSI)** model divides network communication into seven layers:
+
+1. **Physical Layer** – Hardware transmission (cables, RF, fiber)  
+2. **Data Link Layer** – Node-to-node communication and error detection  
+3. **Network Layer** – Routing and addressing (IP)  
+4. **Transport Layer** – Reliable data transfer (TCP/UDP)  
+5. **Session Layer** – Session management  
+6. **Presentation Layer** – Encryption, compression, data translation  
+7. **Application Layer** – End-user protocols (HTTP, MQTT, etc.)  
+
+---
+
+## IoT Architecture Layers
+
+- **Perception Layer** → Sensors & Data Acquisition  
+- **Network Layer** → Wi-Fi / BLE / LoRa Communication  
+- **Processing Layer** → Edge/Gateway/Cloud Data Processing  
+- **Application Layer** → Monitoring & Control Systems  
+
+---
+
+## Industrial IoT Communication Protocols
+
+### Fieldbus Protocols
+
+**MODBUS RTU** – Serial-based industrial communication protocol widely used in automation and SCADA systems.  
+**PROFIBUS** – High-speed industrial fieldbus for PLC and automation networks.  
+**CANOPEN** – Industrial protocol based on CAN bus used in embedded and automation systems.  
+**DEVICENET** – Industrial device-level communication based on CAN technology.  
+**SERCOS** – Real-time communication protocol for motion control and robotics.
+
+### Industrial Ethernet Protocols
+
+**PROFINET** – Industrial Ethernet standard for automation and real-time control.  
+**MODBUS TCP/IP** – Ethernet-based Modbus communication used in SCADA and monitoring systems.  
+**ETHERCAT** – Ultra-fast real-time industrial Ethernet protocol for automation.  
+**ETHERNET/IP** – Industrial communication based on standard Ethernet and TCP/IP.  
+**POWERLINK** – Real-time Ethernet communication used in industrial automation.
+
+These protocols enable **deterministic communication, high reliability, and real-time industrial control**.
+
+---
+
+## IoT Communication Protocols (Application Layer)
+
+- HTTP – Web-based communication  
+- CoAP – Lightweight protocol for constrained devices  
+- AMQP – Reliable enterprise messaging  
+- DDS – Real-time distributed communication  
+- SOAP – XML-based structured messaging  
+- XMPP – Real-time communication protocol  
+- MQTT – Lightweight IoT publish–subscribe protocol  
 
 ---
 
 ## General Embedded Communication Protocols
 
-- **UART** – Asynchronous serial communication  
-- **I2C** – Multi-device synchronous communication bus  
-- **SPI** – High-speed full-duplex serial communication  
-- **1-Wire** – Low-speed single-wire sensor communication  
-- **Microwave Communication** – Long-distance wireless transmission  
-
----
-
-## Engineering Comparison (Application Protocols)
-
-| Protocol | Power | Range | Speed | Latency | Reliability | Best Use Case |
-|----------|------|------|------|--------|------------|--------------|
-| MQTT | Low | Medium | Medium | Low | High | IoT Monitoring |
-| CoAP | Very Low | Medium | Medium | Low | Medium | Sensor Networks |
-| HTTP | High | Medium | High | Medium | High | Cloud/API Systems |
-| AMQP | Medium | Medium | Medium | Medium | Very High | Enterprise Messaging |
-| DDS | Medium | Medium | Very High | Very Low | Very High | Real-Time Systems |
-| SOAP | High | Medium | Low | High | High | Secure Enterprise Systems |
-| XMPP | Medium | Medium | Medium | Low | High | Real-Time Messaging |
-| LoRaWAN | Very Low | Very Long | Low | High | Medium | Remote IoT |
-
----
-
-## Engineering Comparison (Embedded Protocols)
-
-| Protocol | Speed | Complexity | Distance | Power | Typical Use |
-|----------|------|-----------|---------|------|-------------|
-| UART | Medium | Low | Short | Low | Debug & Device Communication |
-| I2C | Medium | Medium | Short | Low | Sensors & Peripherals |
-| SPI | Very High | Medium | Short | Medium | ADC/DAC, Memory, Sensors |
-| 1-Wire | Low | Low | Short | Very Low | Simple Sensors |
-| Microwave | Medium | High | Long | Medium | Wireless Telemetry |
-
----
-
-## When to Use Which Protocol
-
-- **MQTT** → Low-power IoT monitoring, sensor-to-cloud communication  
-- **CoAP** → Constrained embedded sensor networks  
-- **HTTP** → Cloud APIs, web-based IoT platforms  
-- **AMQP** → Reliable enterprise and distributed systems  
-- **DDS** → Real-time industrial, robotics, and mission-critical systems  
-- **SOAP** → Secure enterprise communication  
-- **XMPP** → Real-time device messaging and signaling  
-- **LoRaWAN** → Long-range, low-power remote monitoring  
-
-- **UART** → Debugging, device-to-device communication  
-- **I2C** → Multiple sensors on single bus  
-- **SPI** → High-speed sensor and memory interface  
-- **1-Wire** → Low-power simple sensor communication  
-- **Microwave** → Long-distance wireless telemetry  
-
----
-
-## IoT System Architecture Context
-
-- **Perception Layer** → Sensors & Data Acquisition  
-- **Network Layer** → Wi-Fi / BLE / LoRa Connectivity  
-- **Processing Layer** → Edge / Gateway / Cloud  
-- **Application Layer** → Monitoring & Control Interface  
+- UART – Asynchronous device communication  
+- I2C – Multi-device serial bus  
+- SPI – High-speed synchronous communication  
+- 1-Wire – Low-power single-wire communication  
+- Microwave – Long-distance wireless communication  
 
 ---
 
@@ -121,50 +114,50 @@ The knowledge presented here is based on practical exposure to IoT and embedded 
 
 - Industrial IoT Monitoring  
 - Smart Energy Systems  
-- Remote Sensor Networks  
+- Embedded Wireless Communication  
 - Edge-to-Cloud Communication  
-- Wireless Embedded Systems  
 - Industrial Automation  
 
 ---
 
-## My Contribution
+## References
 
-- Engineering analysis of IoT communication protocols  
-- Architecture-level comparison and protocol selection study  
-- Documentation of communication models and system integration  
-- Applied knowledge from embedded and IoT development  
-
----
-
-## Tools & Knowledge Domain
-
-- Embedded Systems Engineering  
-- IoT Architecture & Communication  
-- MQTT / CoAP / HTTP / AMQP / DDS / LoRaWAN  
-- Wireless Embedded Communication  
-- Edge-to-Cloud System Design  
-
----
-
-## Repository Scope
-
-This repository contains **engineering documentation only**.  
-It does not include proprietary firmware, industrial code, or confidential implementation.
+1. https://www.allaboutcircuits.com/technical-articles/internet-of-things-communication-protocols-iot-data-protocols/  
+2. https://azure.microsoft.com/en-in/solutions/iot/iot-technology-protocols/  
+3. https://www.barbara.tech/blog/iot-communication-protocols-you-should-know-about  
+4. https://www.interviewbit.com/blog/iot-architecture/  
+5. https://www.geeksforgeeks.org/architecture-of-internet-of-things-iot/  
+6. https://www.geeksforgeeks.org/open-systems-interconnection-model-osi/  
+7. https://dergipark.org.tr/tr/download/article-file/2213079  
+8. https://www.researchgate.net/publication/312957467_Internet_of_Things_Architectures_Protocols_and_Applications  
+9. https://www.javatpoint.com/computer-network-http  
+10. https://www.geeksforgeeks.org/http-full-form/  
+11. https://developer.mozilla.org/en-US/docs/Web/HTTP  
+12. https://en.wikipedia.org/wiki/MQTT  
+13. https://mqtt.org/  
+14. https://www.geeksforgeeks.org/introduction-of-message-queue-telemetry-transport-protocol-mqtt/  
+15. https://xmpp.org/about/technology-overview/  
+16. https://www.geeksforgeeks.org/xmpp-protocol/  
+17. https://www.microfocus.com/documentation/silk-performer/205/en/silkperformer-205-webhelp-en/GUID-FEFE9379-8382-48C7-984D-55D98D6BFD37.html  
+18. https://www.geeksforgeeks.org/basics-of-soap-simple-object-access-protocol/  
+19. https://www.dds-foundation.org/what-is-dds-3/  
+20. https://en.wikipedia.org/wiki/Data_Distribution_Service  
+21. https://www.wallarm.com/what/what-is-amqp  
+22. https://www.geeksforgeeks.org/difference-between-amqp-and-http-protocols/  
+23. https://www.wallarm.com/what/coap-protocol-definition  
+24. https://www.emqx.com/en/blog/coap-protocol  
+25. https://www.geeksforgeeks.org/constrained-application-protocol-coap/  
 
 ---
 
 ## Contact
 
-**Sree Harsha Kuragayala**  
-Graduate Apprentice (2025) • Embedded • IoT • AI Systems  
-📧 sreeharsha.k83@gmail.com  
+Sree Harsha Kuragayala  
+Graduate Apprentice (2025) • Embedded • IoT • AI  
+Email: sreeharsha.k83@gmail.com  
 
 ---
 
 ## License
 
-This project is protected under a **Proprietary Portfolio License**.  
-Unauthorized copying, modification, or commercial use is not permitted.
-
-See `LICENSE` file for details.
+Proprietary Portfolio License – View Only
