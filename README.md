@@ -74,6 +74,28 @@ IoT is a network of physical devices embedded with sensors and connectivity, ena
 - **Application Layer** – Monitoring & Control  
 
 ---
+## Application Layer Protocols
+
+- **HTTP** – Web-based communication and REST APIs  
+- **CoAP** – Lightweight REST protocol for constrained devices  
+- **MQTT** – Publish–subscribe protocol for IoT monitoring  
+- **AMQP** – Reliable enterprise-grade messaging protocol  
+- **DDS** – Real-time, high-performance distributed communication  
+- **SOAP** – XML-based structured messaging protocol  
+- **XMPP** – Real-time messaging and device communication  
+- **LoRaWAN** – Long-range, low-power wireless IoT communication  
+
+---
+
+## General Embedded Communication Protocols
+
+- **UART** – Asynchronous serial communication  
+- **I2C** – Multi-device synchronous communication bus  
+- **SPI** – High-speed full-duplex serial communication  
+- **1-Wire** – Low-speed single-wire sensor communication  
+- **Microwave Communication** – Long-distance wireless transmission  
+
+---
 
 ## Industrial IoT Communication Protocols
 
