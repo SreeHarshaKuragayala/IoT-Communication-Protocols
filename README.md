@@ -12,7 +12,6 @@ Central Manufacturing Technology Institute (CMTI), Bangalore
 
 <p align="center">
 
-<img src="https://img.shields.io/badge/IoT-Engineering-orange?style=for-the-badge">
 <img src="https://img.shields.io/badge/MQTT-Protocol-blue?style=for-the-badge">
 <img src="https://img.shields.io/badge/CoAP-Protocol-green?style=for-the-badge">
 <img src="https://img.shields.io/badge/HTTP-Communication-yellow?style=for-the-badge">
